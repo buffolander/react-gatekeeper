@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": { "esmodules": true },
+      "bugfixes": true
+    }],
+    "@babel/preset-flow"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-private-property-in-object",
+    "@babel/plugin-proposal-private-methods",
+    ["babel-plugin-module-resolver", {
+      "alias": {
+        // "@constants": "./src/Constants",
+      }
+    }]
+  ]
+}

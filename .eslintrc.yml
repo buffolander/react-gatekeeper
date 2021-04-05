@@ -1,0 +1,30 @@
+env:
+  commonjs: true
+  es2021: true
+  node: true
+extends:
+  - airbnb-base
+parser: babel-eslint
+parserOptions:
+  ecmaVersion: 12
+plugins:
+  - import
+settings:
+  import/resolver: { "babel-module": {} }
+rules:
+  import/prefer-default-export: 0
+  prefer-rest-params:
+    - false
+  consistent-return:
+    - false
+  no-unused-expressions:
+    - false
+  semi:
+    - error
+    - never
+  no-console:
+    - error
+    - allow:
+        - info
+        - warn
+        - error
